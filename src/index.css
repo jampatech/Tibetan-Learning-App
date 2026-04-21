@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-tibetan: "Noto Sans Tibetan", "Microsoft Himalaya", "Jiewei Tibetan", serif;
+  --color-maroon: #9D2235;
+  --color-saffron: #FFC61E;
+  --color-gold: #D4AF37;
+  --color-turquoise: #40E0D0;
+  --color-cream: #F9F4E8;
+  --color-ink: #2D1B0D;
+  --color-border: #E5DCC5;
+  --color-typing-blue: #005A9C;
+  --color-grammar-green: #00843D;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-ink bg-cream;
+    font-family: Georgia, serif;
+  }
+}
+
+.font-tibetan {
+  font-family: var(--font-tibetan);
+}
+
